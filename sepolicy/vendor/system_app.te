@@ -24,3 +24,4 @@ allow system_app sysfs_battery_supply:file { read open getattr };
 allow system_app sysfs_batteryinfo:dir { search };
 allow system_app sysfs_batteryinfo:file { read open getattr };
 allow system_app sysfs:file { read open getattr };
+allow system_app sysfs_zram:file r_file_perms;
