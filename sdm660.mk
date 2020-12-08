@@ -63,6 +63,7 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl \
     android.hardware.boot@1.0-impl.recovery \
     android.hardware.boot@1.0-service \
+    android.hardware.health@2.1-impl.recovery \
     bootctrl.sdm660 \
     bootctrl.sdm660.recovery
 
@@ -268,7 +269,8 @@ PRODUCT_COPY_FILES += \
 
 # Healthd
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.0-service
+    android.hardware.health@2.1-impl:64 \
+    android.hardware.health@2.1-service
 
 # HIDL
 PRODUCT_PACKAGES += \
