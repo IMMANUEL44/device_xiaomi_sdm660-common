@@ -1,0 +1,5 @@
+allow untrusted_app theme_prop:file read;
+allow untrusted_app theme_prop:file open;
+allow untrusted_app theme_prop:file getattr;
+allow untrusted_app blkio_dev:dir search;
+allow untrusted_app cache_file:lnk_file read
