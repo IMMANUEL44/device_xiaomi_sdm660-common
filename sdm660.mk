@@ -40,6 +40,7 @@ endif
 # Inherit proprietary files
 $(call inherit-product, vendor/xiaomi/sdm660-common/sdm660-common-vendor.mk)
 $(call inherit-product-if-exists, vendor/xiaomi/MiuiCamera/config.mk)
+$(call inherit-product-if-exists, vendor/gapps/common/common-vendor.mk)
 
 # Common Tree Path
 COMMON_PATH := device/xiaomi/sdm660-common
@@ -309,8 +310,7 @@ PRODUCT_PACKAGES += \
     init.xiaomi_parts.rc \
     init.performance.sdm660.rc \
     init.verity.rc \
-    ueventd.qcom.rc \
-    init.safailnet.rc
+    ueventd.qcom.rc
 
 # FM
 ifeq ($(BOARD_HAVE_QCOM_FM),true)
@@ -586,7 +586,6 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
-# GvisualMod
+# DeviceSettings
 PRODUCT_PACKAGES += \
-    G-UIRadiusAndroid \
-    G-UIRadiusSystemUI 
+   DeviceSettings

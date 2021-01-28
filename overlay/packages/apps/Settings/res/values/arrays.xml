@@ -26,19 +26,4 @@
         <item>-1</item>
         <item>-1</item>
     </integer-array>
-
-    <!--  Legion Battery Health  -->
-    <string name="config_batChargeCycle">/sys/class/power_supply/bms/cycle_count</string>
-    <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full_design</string>
-    <string name="config_batCurCap">/sys/class/power_supply/bms/charge_full</string>
-    <bool name="config_supportBatteryHealth">true</bool>
-
-    <!--  Legion About Phone  -->
-
-    <string name="legion_device_name_summary">Xiaomi Mi A2</string>
-    <string name="legion_chipset_type_summary">SDM660</string>
-    <string name="legion_gpu_summary">Adreno512</string>
-    <string name="legion_camera_mp_summary">20/12</string>
-    <string name="legion_screen_type_summary">IPS 5.99</string>
-
 </resources>
