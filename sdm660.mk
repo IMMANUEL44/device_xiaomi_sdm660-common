@@ -547,6 +547,9 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel
 
+QCOM_SOONG_NAMESPACE := \
+    $(COMMON_PATH)/HALs
+
 # Shims
 PRODUCT_PACKAGES += \
     libcutils_shim
