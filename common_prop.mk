@@ -233,7 +233,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.vidc.dec.enable.downscalar=1 \
     vendor.vidc.enc.disable.pq=true \
     vendor.vidc.enc.disable_bframes=1 \
-    vidc.enc.dcvs.extra-buff-count=2
+    vidc.enc.dcvs.extra-buff-count=2 \
+    persist.sys.fflag.override.settings_fuse=false \
+    mmp.enable.3g2=true \
+    media.aac_51_output_enabled=true \
+    media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
 # Memory optimizations
 PRODUCT_PROPERTY_OVERRIDES += \
